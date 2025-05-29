@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio Innovant - Développeur</title>
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+
+<header>
+  <h1>FANOU Anthony Peniel</h1>
+  <nav>
+    <a href="#about">À propos</a>
+    <a href="#skills">Compétences</a>
+    <a href="#projects">Projets</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <section id="about" class="about" style="animation-delay: 0s;">
+    <h2>À propos de moi</h2>
+    <p>Étudiant passionné par le développement web en licence 2, je suis actuellement à la recherche d’un stage pour mettre mes compétences en pratique et contribuer à des projets concrets, tout en développant mes savoir-faire professionnels. </p>
+  </section>
+
+  <section id="skills" class="skills-section">
+    <h2>Compétences</h2>
+    <div class="skills">
+      <div class="skill">JavaScript</div>
+      <div class="skill">HTML5 & CSS3</div>
+      <div class="skill">SQL</div>
+      <div class="skill">Git & GitHub</div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects-section">
+    <h2>Projets</h2>
+    <div class="projects" aria-label="Liste de projets">
+      <div class="project-card" tabindex="0" aria-describedby="proj1-desc">
+        <div class="project-image" style="background-image: url('https://source.unsplash.com/300x180/?technology,code');"></div>
+        <div class="project-content">
+          <div class="project-title">Portfolio Personnel</div>
+          <div id="proj1-desc" class="project-desc">Un portfolio moderne responsive présentant mes compétences et projets.</div>
+          <div class="project-links">
+            <a href="https://github.com/votrenom/portfolio" target="_blank" rel="noopener noreferrer">Code</a>
+            <a href="https://votrenom.github.io/portfolio" target="_blank" rel="noopener noreferrer">Voir</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <h2>Contactez-moi</h2>
+    <form class="contact-form" id="contactForm" aria-label="Formulaire de contact">
+      <input type="text" id="name" name="name" placeholder="Votre nom complet" required autocomplete="name" aria-required="true" />
+      <input type="email" id="email" name="email" placeholder="Votre email" required autocomplete="email" aria-required="true" />
+      <textarea id="message" name="message" placeholder="Votre message" rows="5" required aria-required="true"></textarea>
+      <button type="submit">Envoyer</button>
+      <div class="form-message" role="alert" aria-live="polite"></div>
+    </form>
+  </section>
+</main>
+
+<footer>
+  &copy; 2024 FANOU Anthony Peniel– Développeur en informatique
+</footer>
+
+<script src="portfolio.js"></script>
+</body>
+</html>
